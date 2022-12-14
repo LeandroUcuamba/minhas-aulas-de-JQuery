@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de JQuery</title>
+
+    <style>
+      body{
+         text-align: center;
+      }
+   </style>
+
+</head>
+<body>
+  <h1>O jQuery pode manipular o DOM</h1>
+  <h2>DOM - Document Object Model (Modelo de Objecto de Documento)</h2>
+  <p>Em outras palavras é a arvore de elementos do nosso código. O jQuery pode acessar 
+    e actualizem dinamicamente o conteudo, a estrutura e o estilo de um documento.
+    <br>Tudo pode ser modificado, adicionado e removido usando jQuery.
+  </p>
+
+  <input id="texto" type="text" placeholder="Digite algo">
+  <br><br>
+  <a id="link" href="https://google.com.br">Link para o google</a>
+  <button id="botao">Verificar link</button>
+  <br><br>
+
+  <img src="img/imgGoogle.jpg">
+  
+  <script src="js/jquery-3.6.0.js">  </script>
+
+  <script>
+    $(document).ready(function(){
+       $('#botao').click(function(){
+           var link = $("#link").attr("href");
+           alert('O link vai para o: ' + link);
+
+           var caminho = $('img').attr("src");
+           alert("A imagem tem o caminho:" + caminho);
+       });
+    });
+  </script>
+
+</body>
+</html>

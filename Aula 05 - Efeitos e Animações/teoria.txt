@@ -1,0 +1,23 @@
+hide -> esconde um elemento "diminuindo a dimensão". E pode ser passado nele 
+o segundo e até uma função;
+
+show -> mostrar um elemento que foi oculto "diminuindo a dimensão". E pode ser passado 
+nele o segundo e até uma função;
+
+toggle -> funciona como os dois. E como se fosse uma chave;
+Ex: se apertar esconde "hide". E se escondeu se voltares a clicar aparece "show";
+
+fadeIn -> mostrar um elemento que foi oculto "aparecendo pela lateral".
+
+fadeOut -> esconde um elemento "desaparecendo pela lateral".
+
+Neles pode ser passado o segundo e o parametro "slow" para reduzir a velocidade;
+
+fadeToggle -> funciona como os dois. E como se fosse uma chave;
+Ex: se apertar esconde "fadeOut". E se escondeu se voltares a clicar aparece "fadeIn";
+
+slideDown -> efeito para deslizar para baixo;
+
+slideUp -> efeito para subir;
+
+Também tem o slideToggle -> funciona como chave;

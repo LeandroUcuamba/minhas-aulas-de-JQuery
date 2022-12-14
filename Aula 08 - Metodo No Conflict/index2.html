@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula AJAX - Metodo No Conflict</title>
+
+    <style>
+        body{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        button{
+            margin-top: 90px;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    </style>
+
+</head>
+<body>
+
+    <button>CLIQUE AQUI</button>
+    <p></p>
+
+    <script src="js/jquery-3.6.0.js"></script>
+
+    <script>
+       var t = $.noConflict();
+        t(document).ready(function(){
+           t('button').click(function(){
+               t('p').text('Adicionou texto com o botão');
+           });
+
+        });
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,11 @@
+
+Daqui em diante é necessario estar no servidor para testar.
+Ex: no server local "localhost", então ligue o XAMPP.
+
+
+
+
+AJAX - Asynchronous JavaScript And XML;
+
+Resumidamente, o AJAX trata de carregar dados em segundo plano e exibi-los
+na pagina web, sem recarregar a pagina inteira;

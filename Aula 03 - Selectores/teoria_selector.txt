@@ -1,0 +1,1 @@
+Um seletor - diz respeito em pegar um elemento que esta dentro de um html.

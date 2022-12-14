@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de JQuery</title>
+
+    <style>
+      body{
+         text-align: center;
+      }
+   </style>
+
+</head>
+<body>
+  <h1>O jQuery pode manipular o DOM</h1>
+  <h2>DOM - Document Object Model (Modelo de Objecto de Documento)</h2>
+  <p>Em outras palavras é a arvore de elementos do nosso código. O jQuery pode acessar 
+    e actualizem dinamicamente o conteudo, a estrutura e o estilo de um documento.
+    <br>Tudo pode ser modificado, adicionado e removido usando jQuery.
+  </p>
+
+  <input id="texto" type="text" placeholder="Digite algo">
+  <br><br>
+  <a id="link" href="https://google.com.br">Link para o google</a>
+  <br><br>
+
+  <img src="img/imgGoogle.jpg">
+
+  <br><br>
+  <button id="botao1">Modificar titulo h1</button><br><br>
+  <button id="botao2">Modificar titulo h2</button><br><br>
+  <button id="botao3">Atribuir valor ao Iinput</button><br><br>
+  <button id="botao4">Trocar o link</button><br><br>
+  <button id="botao5">Trocar a imagem</button>
+
+
+
+  <script src="js/jquery-3.6.0.js">  </script>
+
+  <script>
+    $(document).ready(function(){
+       $('#botao1').click(function(){
+          $('h1').text('Mudei o texto com o jQuery');
+       });
+
+       $('#botao2').click(function(){
+          $('h2').html('<b>Mudei o h2</b> com o <i>jQuery</i>');
+       });
+
+       $('#botao3').click(function(){
+          $('#texto').val('Leandro Ucuamba');
+       });
+
+       $('#botao4').click(function(){
+          $('#link').text('Ir para o facebook');
+          $('#link').attr('href','https://www.facebook.com');
+       });
+       
+       $('#botao5').click(function(){
+          $('img').attr('src','img/img1.jpg');
+       });
+
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+O Jquery é uma biblioteca que tem como objectivo simplificar o uso do javascript nos
+projecto de web;
+

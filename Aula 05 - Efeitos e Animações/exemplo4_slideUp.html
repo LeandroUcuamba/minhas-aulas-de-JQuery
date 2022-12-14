@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de JQuery</title>
+    <style>
+       body{
+          text-align: center;
+       }
+
+
+      #flip, #painel{
+        padding: 5px;
+        text-align: center;
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+      }
+
+      #painel{
+        padding: 50px;
+      }
+
+
+    </style>
+
+</head>
+<body>
+   
+  <div id="flip">Clique aqui para aparecer o painel</div>
+  <div id="painel">Painel oculto</div>
+   
+
+  <script src="js/jquery-3.6.0.js">  </script>
+
+  <script>
+     $(Document).ready(function(){
+        $("#flip").click(function(){
+            $('#painel').slideUp('slow');
+        });
+
+     });
+
+  </script>
+
+</body>
+</html>

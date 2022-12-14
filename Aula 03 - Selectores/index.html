@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de JQuery</title>
+</head>
+<body>
+   
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem dignissimos blanditiis molestiae 
+  consequatur earum tempore ipsam  illo corporis repudiandae, quaerat dolore,
+  id nobis aliquid sint, obcaecati neque? Odio, possimus beatae.</p>
+
+  <p id="teste">Isso é um paragrafo de teste</p>
+  <p class="p-yellow">Outro paragrafo</p>
+  <div class="p-yellow">Isso é o que?</div>
+   
+
+  <script src="js/jquery-3.6.0.js">  </script>
+
+  <script>
+     $(document).ready(function(){
+       $('p').html('Inserido com Jquery');
+  //   $('#teste').html('Inserido com Jquery'); -> ele add o texto onde o id é teste;
+  //   $('.p-yellow').html('Inserido com Jquery'); -> ele add o texto onde a classe é p-yellow;
+  //   $('p.p-yellow').html('Inserido com Jquery'); -> ele add o texto num paragrafo e onde a classe é p-yellow;
+  //   $('div.p-yellow').html('Inserido com Jquery'); -> ele add o texto numa div e onde a classe é p-yellow;
+
+     });
+
+  </script>
+
+</body>
+</html>

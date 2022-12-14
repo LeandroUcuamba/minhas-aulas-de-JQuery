@@ -1,0 +1,8 @@
+Como sabemos o JQuery usa o cifrão para dizer que vamos trabalhar com uma
+de suas funções.
+
+Acontece que o programador ao conhecer outras bibliotecas ele tende a usar
+e pode ser que ao usar varios framework num projectos estes outros framework
+podem já usar o cifrão. Então apresenta alguns conflitos;
+
+Para resolver, o jQuery tem um metodo para resolver este problemas!

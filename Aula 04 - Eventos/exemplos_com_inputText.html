@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de JQuery</title>
+</head>
+<body>
+   
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem dignissimos blanditiis molestiae 
+  consequatur earum tempore ipsam  illo corporis repudiandae, quaerat dolore,
+  id nobis aliquid sint, obcaecati neque? Odio, possimus beatae.</p>
+
+  <p id="teste">Isso é um paragrafo de teste</p>
+  <p class="p-yellow">Outro paragrafo</p>
+  <div class="p-yellow">Isso é o que?</div>
+  <hr><br><br>
+
+  <input id="campoTexto" type="text" placeholder="digite algo" style="padding: 50px">
+  <button id="botao" style="padding: 50px">Clique aqui</button>
+
+  <script src="js/jquery-3.6.0.js">  </script>
+
+  <script>
+     $(document).ready(function(){
+       //Evento disparado que focar o campo;
+       $("#campoTexto").focus(function(){
+          $(this).css("background-color","yellow");
+       });
+       
+       //Evento disparado quando desfocar o campo;
+       $("#campoTexto").blur(function(){
+          $(this).css("background-color","green");
+       });
+
+     });
+
+  </script>
+
+</body>
+</html>

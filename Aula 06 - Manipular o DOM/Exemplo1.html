@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de JQuery</title>
+
+    <style>
+      body{
+         text-align: center;
+      }
+   </style>
+
+</head>
+<body>
+  <h1>O jQuery pode manipular o DOM</h1>
+  <h2>DOM - Document Object Model (Modelo de Objecto de Documento)</h2>
+  <p>Em outras palavras é a arvore de elementos do nosso código. O jQuery pode acessar 
+    e actualizem dinamicamente o conteudo, a estrutura e o estilo de um documento.
+    <br>Tudo pode ser modificado, adicionado e removido usando jQuery.
+  </p>
+
+  <script src="js/jquery-3.6.0.js">  </script>
+
+  <script>
+    $(document).ready(function(){
+       var textoH1 = $('h1').html();
+       alert(textoH1);
+
+       var text = $('p').text();
+       alert(text);
+    });
+  </script>
+
+</body>
+</html>
